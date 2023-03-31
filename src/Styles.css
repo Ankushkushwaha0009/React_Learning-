@@ -1,0 +1,8 @@
+.ank{
+    background-color: pink;
+}
+table , thead ,th , tr , td {
+ 
+    background-color: aqua;
+    border-collapse: collapse;
+  }
