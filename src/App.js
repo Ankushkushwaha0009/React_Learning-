@@ -1013,86 +1013,101 @@
 
 
 
-import './App'
+// import './App'
 
-import { Table } from 'react-bootstrap';
-function App(){
+// import { Table } from 'react-bootstrap';
+// function App(){
 
-   const student11 = [
-         {
-            name : 'Ankush'  , email : 'ankushkushwaha2828@gmail.com' , contact : 38093 , address : [
-            {hn : 12 , city : 'mumbai' , country : 'India'} , 
-            {hn : 23 , city : 'lucknow' , country : 'England'} 
-         ]} , 
-         {
-            name : 'Vishal'  , email : 'vishalkushwaha2839@gmail.com' , contact  :397973  , address : [
-            {hn : 12 , city : 'mumbai' , country : 'India'} , 
-            {hn : 23 , city : 'lucknow' , country : 'England'} 
-         ]} , 
-         {
-            name : 'Rohan'   , email : 'rohanmourya3880@gmail.com' , contact : 212193 , address : [
-            {hn : 12 , city : 'mumbai' , country : 'India'} , 
-            {hn : 23 , city : 'lucknow' , country : 'England'} 
-         ]} , 
-   ]
-   return(
-       <center><div className='App'>
-             <h1>List with bootstrap</h1>
+//    const student11 = [
+//          {
+//             name : 'Ankush'  , email : 'ankushkushwaha2828@gmail.com' , contact : 38093 , address : [
+//             {hn : 12 , city : 'mumbai' , country : 'India'} , 
+//             {hn : 23 , city : 'lucknow' , country : 'England'} 
+//          ]} , 
+//          {
+//             name : 'Vishal'  , email : 'vishalkushwaha2839@gmail.com' , contact  :397973  , address : [
+//             {hn : 12 , city : 'mumbai' , country : 'India'} , 
+//             {hn : 23 , city : 'lucknow' , country : 'England'} 
+//          ]} , 
+//          {
+//             name : 'Rohan'   , email : 'rohanmourya3880@gmail.com' , contact : 212193 , address : [
+//             {hn : 12 , city : 'mumbai' , country : 'India'} , 
+//             {hn : 23 , city : 'lucknow' , country : 'England'} 
+//          ]} , 
+//    ]
+//    return(
+//        <center><div className='App'>
+//              <h1>List with bootstrap</h1>
          
          
-                  <Table striped bordered hover variant="dark">  
-                     <thead>
-                        <tr>
-                           <th>Sr.No</th>
-                           <th>Name</th>
-                           <th>Email</th>
-                           <th>Contact</th>
-                           <th>Address</th>
+//                   <Table striped bordered hover variant="dark">  
+//                      <thead>
+//                         <tr>
+//                            <th>Sr.No</th>
+//                            <th>Name</th>
+//                            <th>Email</th>
+//                            <th>Contact</th>
+//                            <th>Address</th>
 
-                        </tr>
+//                         </tr>
    
-                        {
-                           student11.map((i , i1) => 
+//                         {
+//                            student11.map((i , i1) => 
 
                           
-                              <tr key={i1}>
-                                  <td>{i1}</td>
-                                 <td>{i.name}</td>
-                                 <td>{i.email}</td>
-                                 <td>{i.contact}</td>
+//                               <tr key={i1}>
+//                                   <td>{i1}</td>
+//                                  <td>{i.name}</td>
+//                                  <td>{i.email}</td>
+//                                  <td>{i.contact}</td>
 
-                                 <td>
-                                    <Table striped  bordered hover variant="dark">  
-                                    <tbody>
-                                    {
-                                        i.address.map((data) => 
-                                            <tr>
-                                                <td>{data.hn}</td>
-                                                <td>{data.city}</td>
-                                                <td>{data.country}</td>
-                                            </tr>
-                                        )
-                                    }
-                                    </tbody>
-                                    </Table>
-                                </td>
-                              </tr>
+//                                  <td>
+//                                     <Table striped  bordered hover variant="dark">  
+//                                     <tbody>
+//                                     {
+//                                         i.address.map((data) => 
+//                                             <tr>
+//                                                 <td>{data.hn}</td>
+//                                                 <td>{data.city}</td>
+//                                                 <td>{data.country}</td>
+//                                             </tr>
+//                                         )
+//                                     }
+//                                     </tbody>
+//                                     </Table>
+//                                 </td>
+//                               </tr>
                               
 
-                           )
-                        }
-                     </thead>
-               </Table>
-               </div>
+//                            )
+//                         }
+//                      </thead>
+//                </Table>
+//                </div>
           
 
-    </center>
+//     </center>
+//    )
+
+// }
+
+// export default App ; 
+
+
+//reusable component 
+
+
+import './App'
+import Reusable_Componet from './Reusable_Componet'
+import User_Reusable from './User_Reusable';
+function App(){
+
+   return(
+      <div className='App'>
+            <Reusable_Componet /> 
+      </div>
    )
 
 }
 
 export default App ; 
-
-
-
-
