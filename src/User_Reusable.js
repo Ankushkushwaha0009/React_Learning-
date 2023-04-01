@@ -1,16 +1,22 @@
-import './Design'
+import './Styles.css'
 function User_Reusable(props){
-       return(
-          <center>
-            
-             <div>
-                <span>{props.data.name }</span>
-                <span>{props.data.email }</span>
-                <span>{props.data.contact }</span>
-             </div>
-           
-          </center>
-       )
+
+    function PrintName(){
+        alert(props.data.name) ; 
+    }
+       
+    return(
+        <center>
+        
+            <div>
+            <span>{props.data.name }</span>
+            <span>{props.data.email }</span>
+            {/* <span>{props.data.contact }</span> */}
+            <button onClick={PrintName}> click : </button>
+            </div>
+        
+        </center>
+    )
 
 }
 

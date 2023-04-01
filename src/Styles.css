@@ -1,8 +1,23 @@
-.ank{
+/* .ank{
     background-color: pink;
 }
 table , thead ,th , tr , td {
  
     background-color: aqua;
     border-collapse: collapse;
-  }
+  } */
+
+
+span{
+
+    font-size: 20px;
+    color: white;
+    background-color: rgb(243, 148, 24);
+    padding: 23px;
+    line-height: 80px;
+
+
+
+}
+
+

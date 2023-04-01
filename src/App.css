@@ -7,14 +7,6 @@
   pointer-events: none;
 }
 
-span{
-
-   font-size: 20px;
-    color: white;
-    background-color: burlywood;
-    padding: 23px;
-
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
